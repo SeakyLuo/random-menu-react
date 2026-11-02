@@ -1,0 +1,54 @@
+.record-favorite { display: flex; align-items: center; gap: 10px; min-height: 48px; margin: -4px 0 22px; font-size: 15px; }
+.record-favorite > svg { color: var(--accent-text); }
+.record-favorite > span { flex: 1; min-width: 0; }
+.record-favorite input { margin-left: auto; flex: 0 0 20px; width: 20px !important; height: 20px !important; min-height: 20px !important; padding: 0 !important; accent-color: var(--primary); }
+.record-address-actions { display: flex; align-items: center; justify-content: flex-end; gap: 4px; }
+.record-address-actions button, .restaurant-food-heading button { min-width: 44px; min-height: 44px; background: transparent; color: var(--muted); font-size: 12px; padding: 8px; }
+.record-address-actions button:hover, .restaurant-food-heading button:hover { color: var(--accent-text); }
+.record-section-heading .text-button { min-height: 44px; }
+.record-visit-row { display: flex; align-items: center; gap: 4px; border-bottom: 1px solid var(--border); }
+.record-visit-row > button:first-child { flex: 1; min-width: 0; display: flex; align-items: center; gap: 9px; min-height: 70px; padding: 13px 0; background: transparent; text-align: left; }
+.record-visit-row span { min-width: 0; }
+.record-visit-row strong { display: block; overflow-wrap: anywhere; }
+.record-visit-row b { font-size: 13px; white-space: nowrap; }
+.record-remove-visit { flex-shrink: 0; min-width: 44px; min-height: 44px; background: transparent; color: var(--muted); font-size: 12px; }
+.sheet-fullscreen .record-bottom-actions { padding: 14px 0 max(20px, env(safe-area-inset-bottom)); margin-top: auto; border-top: 1px solid var(--border); }
+.record-bottom-actions .button { width: 100%; }
+.restaurant-auto-cost { display: flex; align-items: center; gap: 10px; font-size: 14px; min-height: 44px; }
+.recipe-form .restaurant-auto-cost input { width: 19px !important; height: 19px !important; display: inline-block; margin: 0; padding: 0; min-height: 0; accent-color: var(--primary); }
+.restaurant-edit-hint { color: var(--muted); font-size: 12px; line-height: 1.8; margin: 0 0 15px; }
+.restaurant-known-companions { margin: -4px 0 16px; }
+.restaurant-known-companions summary { min-height: 44px; padding-block: 9px; color: var(--accent-text); font-size: 13px; cursor: pointer; }
+.restaurant-known-companions > div { display: flex; flex-wrap: wrap; gap: 8px; }
+.restaurant-known-companions button { display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 8px 12px; background: var(--selected); color: var(--accent-text); border-radius: 9px; font-size: 13px; max-width: 100%; overflow-wrap: anywhere; }
+.restaurant-food-heading { display: flex; align-items: center; justify-content: space-between; gap: 6px; margin: -8px -5px 10px 0; }
+.restaurant-food-heading strong { flex: 1; font-size: 14px; }
+.restaurant-edit-label { font-size: 14px; margin-top: 15px; margin-bottom: 10px; }
+.restaurant-edit-label > span { display: block; color: var(--muted); font-size: 11px; margin-top: 4px; }
+.restaurant-photo-manager { display: flex; gap: 10px; overflow-x: auto; padding-bottom: 7px; margin-bottom: 12px; }
+.restaurant-photo-item { width: 144px; flex: 0 0 144px; }
+.restaurant-photo-thumb { position: relative; border-radius: 10px; overflow: hidden; }
+.restaurant-photo-thumb > button { display: block; width: 144px; height: 108px; padding: 0; background: var(--field); }
+.restaurant-photo-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.restaurant-cover-badge { position: absolute; left: 5px; top: 5px; padding: 2px 7px; background: #17251dd9; color: white; border-radius: 5px; font-size: 11px; pointer-events: none; }
+.restaurant-photo-replace { position: absolute; bottom: 0; right: 0; display: grid; place-items: center; min-width: 52px; min-height: 44px; background: #17251dd9; color: white; font-size: 12px; cursor: pointer; }
+.restaurant-photo-replace input, .restaurant-add-photo input, .restaurant-photo-batch input { position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0; cursor: pointer; }
+.restaurant-photo-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; margin-top: 5px; }
+.restaurant-photo-actions button { min-height: 44px; background: var(--field); border-radius: 5px; color: var(--muted); font-size: 12px; padding: 5px; }
+.restaurant-add-photo { position: relative; flex: 0 0 112px; width: 112px; height: 108px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 7px; border: 1px dashed var(--border); color: var(--muted); font-size: 12px; border-radius: 10px; cursor: pointer; }
+.restaurant-photo-batch { position: relative; display: flex; align-items: center; justify-content: center; gap: 9px; min-height: 48px; border: 1px solid var(--border); border-radius: 10px; background: var(--field); color: var(--accent-text); font-size: 14px; margin-bottom: 17px; cursor: pointer; }
+.restaurant-photo-batch.is-disabled { opacity: .5; }
+.restaurant-photo-batch:focus-within, .restaurant-photo-replace:focus-within, .restaurant-add-photo:focus-within { outline: 2px solid var(--focus); outline-offset: -2px; }
+.record-import-options { display: flex; flex-direction: column; gap: 12px; margin-top: 22px; }
+.restaurant-photo-dates { margin: 12px 0 20px; border-block: 1px solid var(--border); padding: 12px 0; }
+.restaurant-photo-dates p { color: var(--muted); font-size: 12px; }
+.restaurant-photo-dates button { display: block; padding: 10px 2px; min-height: 44px; background: transparent; color: var(--accent-text); font-size: 13px; }
+.restaurant-photo-preview { display: block; width: 100%; max-height: 72dvh; object-fit: contain; margin: auto 0; }
+.restaurant-preview-pagination { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 16px; font-size: 13px; }
+.restaurant-preview-pagination .button { min-height: 44px; padding-inline: 14px; }
+@media (max-width: 360px) {
+  .record-visit-row > button:first-child { flex-wrap: wrap; }
+  .record-visit-row > button:first-child > span { flex-basis: 100%; }
+  .restaurant-food-heading { align-items: flex-start; flex-wrap: wrap; }
+  .restaurant-food-heading > div { margin-left: auto; }
+}
